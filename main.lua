@@ -1,11 +1,12 @@
 --[[
-local songs = {
+getgenv().songs = {
 	{id = "rbxassetid://SONG_ID", title = "Artist\nSong", icon = "rbxassetid://SONG_COVER-ART"},
 	{id = "rbxassetid://SONG_ID", title = "Artist\nSong", icon = "rbxassetid://SONG_COVER-ART"}
 }
 --]]
 
 local gui = game:GetObjects("rbxassetid://18647165019")[1]
+local songs = getgenv().songs
 
 local mainFrame = gui.Main
 local guiIcon = gui.button
