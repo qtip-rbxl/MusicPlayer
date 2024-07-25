@@ -13,9 +13,6 @@ local musicListFrame = mainFrame.list
 local songButtonTemplate = musicListFrame.template
 local musicPlayerFrame = mainFrame.player
 
-local DraggableObject	= require(gui.DraggableObject)
-local FrameDrag 		= DraggableObject.new(mainFrame)
-
 local playPauseButton = musicPlayerFrame.play
 local muteButton = musicPlayerFrame.mute
 local durationBar = musicPlayerFrame.bar
@@ -111,4 +108,4 @@ guiIcon.MouseButton1Click:Connect(function()
 	end
 end)
 
-FrameDrag:Enable()
+gui.Parent = game.Players.LocalPlayer.PlayerGui
